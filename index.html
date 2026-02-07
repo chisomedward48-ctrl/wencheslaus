@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PiShield Wallet | Safe Pi Wallet Companion</title>
+    <meta
+      name="description"
+      content="PiShield Wallet helps Pi users protect their wallet with scam warnings, security checklists, and a private safety score tool."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <div class="brand">PiShield Wallet</div>
+        <a class="nav-link" href="#safety-check">Safety Check</a>
+      </nav>
+      <div class="container hero-content">
+        <p class="badge">Built for Pi Network users</p>
+        <h1>A safer way to manage your Pi wallet habits.</h1>
+        <p>
+          Learn secure wallet practices, detect risky behavior, and protect your
+          recovery phrase with easy steps.
+        </p>
+        <div class="cta-row">
+          <a href="#safety-check" class="btn btn-primary">Run Safety Check</a>
+          <a href="#learn" class="btn btn-secondary">Learn Best Practices</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="learn" class="container grid three">
+        <article class="card">
+          <h2>Never share your passphrase</h2>
+          <p>
+            PiShield will never ask for your 24-word phrase. Anyone who asks for
+            it is trying to steal your wallet.
+          </p>
+        </article>
+        <article class="card">
+          <h2>Enable device lock</h2>
+          <p>
+            Use screen lock, biometrics, and app PINs to prevent unauthorized
+            access if your phone gets lost.
+          </p>
+        </article>
+        <article class="card">
+          <h2>Spot fake support</h2>
+          <p>
+            Real moderators never DM asking for keys. Verify links before
+            connecting your wallet to any dApp.
+          </p>
+        </article>
+      </section>
+
+      <section id="safety-check" class="container card highlight">
+        <h2>Pi Wallet Safety Check</h2>
+        <p>
+          Answer four quick questions. Your score is calculated locally in your
+          browser.
+        </p>
+        <form id="safety-form" class="checklist">
+          <label><input type="checkbox" name="q1" /> I store my passphrase offline in a secure place.</label>
+          <label><input type="checkbox" name="q2" /> I use screen lock and biometrics on my device.</label>
+          <label><input type="checkbox" name="q3" /> I verify URLs before opening wallet links.</label>
+          <label><input type="checkbox" name="q4" /> I ignore DMs requesting my wallet information.</label>
+          <button type="submit" class="btn btn-primary">Calculate Score</button>
+        </form>
+        <div id="result" class="result" aria-live="polite"></div>
+      </section>
+
+      <section class="container card disclaimer">
+        <h2>Security promise</h2>
+        <ul>
+          <li>This site does not store your wallet data.</li>
+          <li>No passphrase or private key is ever requested.</li>
+          <li>Use official Pi apps and verified community channels only.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>© <span id="year"></span> PiShield Wallet. Stay safe, stay private.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
