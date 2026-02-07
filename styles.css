@@ -1,0 +1,159 @@
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #f59e0b;
+  --accent-2: #22c55e;
+  --border: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, #0b1023, var(--bg));
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.container {
+  width: min(1050px, 92%);
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 1.2rem 0 4rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.nav-link {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.hero-content {
+  margin-top: 4.5rem;
+  max-width: 700px;
+}
+
+.badge {
+  display: inline-block;
+  border: 1px solid #3f3f46;
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+  color: var(--accent-2);
+  font-size: 0.9rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0.8rem 0;
+}
+
+.cta-row {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+
+.btn {
+  border: 0;
+  border-radius: 0.7rem;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #111;
+}
+
+.btn-secondary {
+  background: #1f2937;
+  color: var(--text);
+  border: 1px solid #334155;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.three {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  background: rgba(17, 24, 39, 0.75);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.2rem;
+  margin-top: 1rem;
+}
+
+.highlight {
+  border-color: #854d0e;
+}
+
+.checklist {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 1rem;
+}
+
+.checklist label {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+}
+
+.result {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  background: #0b1325;
+  border: 1px solid #1e293b;
+}
+
+.result.good {
+  border-color: #166534;
+  color: #86efac;
+}
+
+.result.warn {
+  border-color: #92400e;
+  color: #fdba74;
+}
+
+.result.risk {
+  border-color: #991b1b;
+  color: #fca5a5;
+}
+
+.disclaimer ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.footer {
+  padding: 2rem 0;
+  color: var(--muted);
+}
